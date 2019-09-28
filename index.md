@@ -1,1 +1,1 @@
-# THis is a sample github page
+# Project Proposal
