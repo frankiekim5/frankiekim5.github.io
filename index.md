@@ -11,6 +11,7 @@ The goal is to predict the binary class ‘target’, which indicates whether or
 We will be utilizing three different supervised learning methods to compare the performances and accuracies. Those three methods are Neural Network, Support Vector Machine, and Decision Tree.
 
 ## Expected Results
+Based off of known factors that are significant to detecting cardiovascular disease, we predict out algorithm to find similar traits that correlate with those factors. From our dataset, we estimate that the values for resting blood pressure would be high as well as the value for serum cholesterol. Another factor that would be included would be the level of fasting blood sugar. Therefore, we believe that a patient who has high blood sugar, blood pressure, and cholesterol will be at high risk for cardiovascular disease.
 
 ## Discussion
 
