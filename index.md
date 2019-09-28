@@ -6,11 +6,9 @@ Machine Learning algorithms for predicting cardiovascular disease can improve pr
 ## Methods
 Heart Disease UCI has made their data available with information from 303 individuals. The dataset provides basic features such as age and sex as well as features that are crucial to diagnosing cardiovascular disease such as blood pressure, cholestorol levels, and blood sugar levels.
 
-The goal is to predict the binary class ‘target’, which indicates whether or not a patient has cardiovascular disease.
-	0 = cardiovascular disease present
-	1 = no cardiovascular disease present
+The goal is to predict the binary class ‘target’, which indicates whether or not a patient has cardiovascular disease. A value of 0 indicates a patient with cardiovascular disease while a value of 1 indicates a patient without cardiovascular disease.
 
-Main contribution from this project is to understand different supervised learning model’s performance and its architecture - Neural Network, Support Vector Machine, and Decision Tree.
+We will be utilizing three different supervised learning methods to compare the performances and accuracies. Those three methods are Neural Network, Support Vector Machine, and Decision Tree.
 
 ## Expected Results
 
