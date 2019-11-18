@@ -31,8 +31,6 @@ Based off of known factors that are significant to detecting cardiovascular dise
 
 In order to test the effectiveness of our predictive models, it is common to evaluate two metrics known as sensitivity and specificity.
 
-Sensitivity is defined as $\frac{True Positive}{True Positive + False Negative}$
-
 Sensitivity is defined as the number of True Positives divided by the number of True Positives plus the number of False Negatives.
 
 Specificity is defined as the number of True Negatives divided by the number of True Negatives plus the number of False Positives.
