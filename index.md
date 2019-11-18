@@ -1,7 +1,5 @@
 {{< <script src="//yihui.org/js/math-code.js"></script> >}}
 
-
-
 ## Introduction
 Cardiovascular disease is the leading cause of death globally, and it is expected to cause more than 23.6 million fatalities a year by 2030. One's survival from cardiovascular disease primarily depends on early detection and accurate diagnosis of the disease.
 
@@ -41,7 +39,18 @@ Specificity is defined as True NegativeTrue Negative + False Positive
 
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
+## Data Exploration
 
-## Discussion
+### Feature Selection
+### Normalization
+### Encoding original values to categorical values
+
+## Supervised Learning Techniques
+### Neural Networks
+### Decision Tree
+### Support Vector Machine
+### Logistic Regression
+
+## Results
 
 ## Reference
