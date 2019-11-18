@@ -39,19 +39,26 @@ Specificity is defined as True NegativeTrue Negative + False Positive
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
 ## Data Exploration
-<i> Figure 1. Correlation heatmap of dataset variables. </i>
 <!-- figure 1 -->
+<i> Figure 1. Correlation heatmap of dataset variables. </i>
+
 Based on the correlation heatmap above, the bottom-most row and right-most column depict the correlation of each factor with the target. From the correlation heat map, it is evident that cp, thalach are the most positively correlated with the target, and exang, oldpeak, and ca are the most inversely correlated with the target. To summarize, from the correlation heat map, the five features (cp, thalach, exang, oldpeak, ca) depict the most correlation with the target result.
 
 <!-- figure 2 -->
+<i> Figure 2. Graphical representation of relationships among five selected variables. </i>
+
 The pair plot is used to understand the best set of features to explain the relationship between two variables or to form the most separated clusters.  Thus, it uses the top 5 features chosen from our feature selection ([ 'ca', 'cp’, ‘exang’, ‘old peak’, ‘thalach’]) to show their relations.
 
 ### Feature Selection
 Using a chi-squared statistical test, we identified the same 5 features as having the highest correlation with the target variable.
+
 <!-- figure 3 -->
+<i> Figure 3. Univariate Selection of five features of the dataset. </i>
 
 The Extra Tree Classifier class in the scikit-learn API was used to estimate the importance of features. The five features displayed were the same as above, but the scores were different from the univariate selection.
+
 <!-- figure 4 -->
+<i> Figure 4. Feature importance. </i>
 
 In order to show the accuracy of the following algorithms to choose the most common risk factors for cardiovascular disease from our dataset, we tried to match it with proven medical research. Our top 5 features from the dataset includes ['ca', 'cp’, ‘exang’, ‘old peak’, ‘thalach’] which essentially breaks down to chest pain, number of major vessels, ST depressions found from an ECG, and a person’s maximum heart rate. 
 
@@ -62,6 +69,8 @@ We normalized our raw data in order to convert our data to a common scale and th
 
 ### Encoding original values to categorical values
 <!-- figure 5 -->
+<i>	Figure 5. Normalizing age values by categorizing them into five different groups. </i>
+
 Because the original values in 'age', 'trestbps', 'chol', 'thalach', 'oldpeak' features are not categorical values, we encoded their numerical values into indicator/ categorical values. By doing so, we wanted to see if data manipulation would improve ML training and help us to gain more insight.
 
 ## Supervised Learning Techniques
