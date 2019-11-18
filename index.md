@@ -44,7 +44,9 @@ In addition to these two single-value calculations, we will also provide the con
   <img width="500px" height="350px" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/images/fig1.png">
 </div>
 -->
-<img width="500px" height="350px" style="float: center" src="/images/fig1.png">
+<p align="center">
+  <img width="500px" height="350px" src="/images/fig1.png">
+</p>
 <br>
 <i> Figure 1. Correlation heatmap of dataset variables. </i>
 
