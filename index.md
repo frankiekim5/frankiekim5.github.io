@@ -40,7 +40,7 @@ In addition to these two single-value calculations, we will also provide the con
 
 ## Data Exploration
 <!-- figure 1 -->
-<img width="500px" height="500px" src="/images/fig1.png">
+<img width="500px" height="300px" src="/images/fig1.png">
 <br>
 <i> Figure 1. Correlation heatmap of dataset variables. </i>
 
