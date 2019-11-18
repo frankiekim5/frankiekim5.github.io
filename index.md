@@ -31,10 +31,8 @@ Based off of known factors that are significant to detecting cardiovascular dise
 
 In order to test the effectiveness of our predictive models, it is common to evaluate two metrics known as sensitivity and specificity.
 
-Sensitivity is defined as $\frac{True Positive}{True Positive + False Negative}$
-
-Sensitivity is defined as True PositiveTrue Positive + False Negative
-Specificity is defined as True NegativeTrue Negative + False Positive 
+Sensitivity is defined as the number of True Positives divided by the number of True Positives plus the number of False Negatives
+Specificity is defined as the number of  True Negatives divided by the number of True Negatives plus the number of False Positives
 
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
@@ -196,9 +194,6 @@ The ROC curve for the indicator data is displayed above. The area under the curv
 
 In conclusion, the model with the highest performance for heart disease diagnosis is a Support Vector Machine using indicator data with parameters of c = 1, gamma = 1, and kernel = rbf. The accuracies, specificities, and sensitivities for each model (only the highest accuracy model between the normalized and indicator data was chosen) are shown below, with the SVM having the highest accuracy.
 
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/resultstable.png">
-</p>
 
 ## Reference
 
