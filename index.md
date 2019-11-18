@@ -44,14 +44,18 @@ In addition to these two single-value calculations, we will also provide the con
   <img width="500px" height="350px" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/images/fig1.png">
 </div>
 -->
-<img width="500px" height="350px" style="float: center" src="/images/fig1.png">
+<p align="center">
+  <img width="500px" height="350px" style="float: center" src="/images/fig1.png">
+</p>
 <br>
 <i> Figure 1. Correlation heatmap of dataset variables. </i>
 
 Based on the correlation heatmap above, the bottom-most row and right-most column depict the correlation of each factor with the target. From the correlation heat map, it is evident that cp, thalach are the most positively correlated with the target, and exang, oldpeak, and ca are the most inversely correlated with the target. To summarize, from the correlation heat map, the five features (cp, thalach, exang, oldpeak, ca) depict the most correlation with the target result.
 
 <!-- figure 2 -->
-<img width="500px" height="350px" style="float: center" src="/images/fig2.png">
+<p align="center">
+  <img width="500px" height="350px" style="float: center" src="/images/fig2.png">
+</p>
 <br>
 <i> Figure 2. Graphical representation of relationships among five selected variables. </i>
 
@@ -61,7 +65,9 @@ The pair plot is used to understand the best set of features to explain the rela
 Using a chi-squared statistical test, we identified the same 5 features as having the highest correlation with the target variable.
 
 <!-- figure 3 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig3.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig3.png">
+</p>
 <br>
 <i> Figure 3. Univariate Selection of five features of the dataset. </i>
 
