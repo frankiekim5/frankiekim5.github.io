@@ -39,16 +39,13 @@ Specificity is defined as True NegativeTrue Negative + False Positive
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
 ## Data Exploration
-<!-- figure 1 
-<div style="text-align: center">
-  <img width="500px" height="350px" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/images/fig1.png">
-</div>
--->
+<!-- figure 1 -->
 <p align="center">
   <img width="500px" height="350px" style="float: center" src="/images/fig1.png">
 </p>
 <br>
-<i> Figure 1. Correlation heatmap of dataset variables. </i>
+<!--<i> Figure 1. Correlation heatmap of dataset variables. </i> -->
+Figure 1. Correlation heatmap of dataset variables.***
 
 Based on the correlation heatmap above, the bottom-most row and right-most column depict the correlation of each factor with the target. From the correlation heat map, it is evident that cp, thalach are the most positively correlated with the target, and exang, oldpeak, and ca are the most inversely correlated with the target. To summarize, from the correlation heat map, the five features (cp, thalach, exang, oldpeak, ca) depict the most correlation with the target result.
 
