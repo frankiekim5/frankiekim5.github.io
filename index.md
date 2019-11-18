@@ -1,6 +1,6 @@
 
 ## Introduction
-Cardiovascular disease is the leading cause of death globally, and it is expected to cause more than 23.6 million fatalities a year by 2030. One's survival from cardiovascular disease primarily depends on early detection and accurate diagnosis of the disease.
+Cardiovascular disease is the leading cause of death globally, and it is expected to cause more than 23.6 million fatalities a year by 2030 [1]. One's survival from cardiovascular disease primarily depends on early detection and accurate diagnosis of the disease [4].
 
 We can utilize Machine Learning algorithms to predict how likely one is to be diagnosed with cardiovascular disease, which can be used to improve the prevention rate and to provide critical insight for physicians to provide the correct treatment for the patient. In this project, we compare and contrast several ML algorithms for prediction of cardiovascular disease, and analyze them to identify the factors that determine which algorithm is the best fit for our given dataset.
 
@@ -63,7 +63,7 @@ The Extra Tree Classifier class in the scikit-learn API was used to estimate the
 
 In order to show the accuracy of the following algorithms to choose the most common risk factors for cardiovascular disease from our dataset, we tried to match it with proven medical research. Our top 5 features from the dataset includes ['ca', 'cp’, ‘exang’, ‘old peak’, ‘thalach’] which essentially breaks down to chest pain, number of major vessels, ST depressions found from an ECG, and a person’s maximum heart rate. 
 
-On the other hand, based on research, chest pains, high blood pressure / cholesterol, shortness of breath are among the most common risk factors. We can see that chest pains are a match, as well as shortness of breath and maximum heart rate because they are both correlated to each other. Based on these results, we can see a positive correlation of matches between our dataset and research to show accurate measures.
+On the other hand, based on research, chest pains, high blood pressure / cholesterol, shortness of breath are among the most common risk factors [2]. We can see that chest pains are a match, as well as shortness of breath and maximum heart rate because they are both correlated to each other. Based on these results, we can see a positive correlation of matches between our dataset and research to show accurate measures.
 
 ### Normalization
 We normalized our raw data in order to convert our data to a common scale and thus have consistency across all four of our models. We also decided to normalize the data because we wanted the training data to not be as sensitive towards the scale of the features. In order to normalize our raw data, we processed it through a Min Max Scaler function from the scikit-learn library. We performed this operation for the machine to train the data easily.
@@ -140,3 +140,11 @@ The ROC curve for the indicator data is displayed above. The area under the curv
 ## Results
 
 ## Reference
+
+[1] “About Cardiovascular Diseases.” World Health Organization. World Health Organization, September 29, 2011. https://www.who.int/cardiovascular_diseases/about_cvd/en/.
+
+[2] “Coronary Artery Disease.” Mayo Clinic. Mayo Foundation for Medical Education and Research, May 16, 2018. https://www.mayoclinic.org/diseases-conditions/coronary-artery-disease/symptoms-causes/syc-20350613?fbclid=IwAR1vuj1Re0t5CCxKahfVQZn1udRXqawquDE4AcCi-xB-WGJCG5BsKgF2ArU.
+
+[3] “Machine Learning Can Predict Heart Attack or Death More Accurately Than Humans.” AJMC. Accessed November 18, 2019. https://www.ajmc.com/newsroom/machine-learning-can-predict-heart-attack-or-death-more-accurately-than-humans.
+
+[4] “Patient Portal.” Alaska Heart & Vascular Institute. Accessed November 18, 2019. https://www.alaskaheart.com/the-importance-of-the-early-detection-of-cardiovascular-disease/.
