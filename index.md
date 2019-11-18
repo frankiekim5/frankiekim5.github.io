@@ -103,7 +103,7 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
 
 ### Decision Tree
 <!-- figure 7 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig7.png">
+<img width="750px" height="250px" style="float: center" src="/images/fig7.png">
 <br>
 <i> Figure 7. Decision Tree, using Categorized data. </i>
 
