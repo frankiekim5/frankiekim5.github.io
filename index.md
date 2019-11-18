@@ -60,12 +60,13 @@ The pair plot is used to understand the best set of features to explain the rela
 Using a chi-squared statistical test, we identified the same 5 features as having the highest correlation with the target variable.
 
 <!-- figure 3 -->
-<img width="500px" height="350px" style="float: center" src="/images/fig3.png">
+<img width="400px" height="250px" style="float: center" src="/images/fig3.png">
 <i> Figure 3. Univariate Selection of five features of the dataset. </i>
 
 The Extra Tree Classifier class in the scikit-learn API was used to estimate the importance of features. The five features displayed were the same as above, but the scores were different from the univariate selection.
 
 <!-- figure 4 -->
+<img width="400px" height="250px" style="float: center" src="/images/fig4.png">
 <i> Figure 4. Feature importance. </i>
 
 In order to show the accuracy of the following algorithms to choose the most common risk factors for cardiovascular disease from our dataset, we tried to match it with proven medical research. Our top 5 features from the dataset includes ['ca', 'cp’, ‘exang’, ‘old peak’, ‘thalach’] which essentially breaks down to chest pain, number of major vessels, ST depressions found from an ECG, and a person’s maximum heart rate. 
