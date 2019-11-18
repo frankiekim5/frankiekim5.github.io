@@ -31,9 +31,9 @@ Based off of known factors that are significant to detecting cardiovascular dise
 
 In order to test the effectiveness of our predictive models, it is common to evaluate two metrics known as sensitivity and specificity.
 
-Sensitivity is defined as the number of True Positives divided by the number of True Positives plus the number of False Negatives.
+Sensitivity is defined as the number of True Positives divided by (the number of True Positives plus the number of False Negatives)
 
-Specificity is defined as the number of True Negatives divided by the number of True Negatives plus the number of False Positives.
+Specificity is defined as the number of True Negatives divided by (the number of True Negatives plus the number of False Positives)
 
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
