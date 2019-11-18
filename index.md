@@ -1,3 +1,4 @@
+<script src="//yihui.org/js/math-code.js"></script>
 ## Introduction
 Cardiovascular disease is the leading cause of death globally, and it is expected to cause more than 23.6 million fatalities a year by 2030. One's survival from cardiovascular disease primarily depends on early detection and accurate diagnosis of the disease.
 
@@ -30,7 +31,7 @@ Based off of known factors that are significant to detecting cardiovascular dise
 
 In order to test the effectiveness of our predictive models, it is common to evaluate two metrics known as sensitivity and specificity.
 
-Sensitivity is defined as $\frac{True Positive}{True Positive + False Negative}$
+Sensitivity is defined as $\frac{True Positive}{True Positive + False Negative}$x
 
 Sensitivity is defined as True PositiveTrue Positive + False Negative
 Specificity is defined as True NegativeTrue Negative + False Positive 
