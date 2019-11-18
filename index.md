@@ -40,7 +40,8 @@ In addition to these two single-value calculations, we will also provide the con
 
 ## Data Exploration
 <!-- figure 1 -->
-<img width="250px" height="250px" src="/images/fig1.png">
+<img width="500px" height="500px" src="/images/fig1.png">
+<br>
 <i> Figure 1. Correlation heatmap of dataset variables. </i>
 
 Based on the correlation heatmap above, the bottom-most row and right-most column depict the correlation of each factor with the target. From the correlation heat map, it is evident that cp, thalach are the most positively correlated with the target, and exang, oldpeak, and ca are the most inversely correlated with the target. To summarize, from the correlation heat map, the five features (cp, thalach, exang, oldpeak, ca) depict the most correlation with the target result.
