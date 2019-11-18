@@ -1,6 +1,5 @@
-<script src="//yihui.org/js/math-code.js"></script>
-
-<br>
+<script src="//yihui.org/js/math-code.js">
+</script>
 
 ## Introduction
 Cardiovascular disease is the leading cause of death globally, and it is expected to cause more than 23.6 million fatalities a year by 2030. One's survival from cardiovascular disease primarily depends on early detection and accurate diagnosis of the disease.
