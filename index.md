@@ -74,7 +74,9 @@ Using a chi-squared statistical test, we identified the same 5 features as havin
 The Extra Tree Classifier class in the scikit-learn API was used to estimate the importance of features. The five features displayed were the same as above, but the scores were different from the univariate selection.
 
 <!-- figure 4 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig4.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig4.png">
+</p>
 <br>
 <i> Figure 4. Feature importance. </i>
 
@@ -87,7 +89,9 @@ We normalized our raw data in order to convert our data to a common scale and th
 
 ### Encoding original values to categorical values
 <!-- figure 5 -->
-<img width="750px" height="250px" style="float: center" src="/images/fig5.png">
+<p align="center">
+  <img width="750px" height="250px" style="float: center" src="/images/fig5.png">
+</p>
 <br>
 <i>	Figure 5. Normalizing age values by categorizing them into five different groups. </i>
 
@@ -99,7 +103,9 @@ Neural Networks is an ML algorithm which models after a human brain, consisting 
 
 Sigmoid marginally performed the best among activation functions for our neural network implementation, as expected. As our goal is to perform binary classification, sigmoid, with its output ranging from 0 to 1, stands the best among other activation functions, such as linear, tanh, and reLU. Linear function cannot be used for backpropagation, and so is reLU for our case, as reLU with values above zero simply reduces down to being a linear function. Tanh, given its range from -1 to 1, did not bring us consistent results after several epoch passed through.
 <!-- figure 6 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig6.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig6.png">
+</p>
 <br>
 <i> Figure 6. Neural Network, Normalized Data, Non-Categorized, 300 Epochs </i>
 
@@ -109,12 +115,16 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
 
 ### Decision Tree
 <!-- figure 7 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig7.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig7.png">
+</p>
 <br>
 <i> Figure 7. Decision Tree, using Categorized data. </i>
 
 <!-- figure 8 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig8.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig8.png">
+</p>
 <br>
 <i> Figure 8. Decision Tree Scores with varying number of maximum features. </i>
 
@@ -131,13 +141,17 @@ Support vector machines are a supervised learning technique where labeled traini
 
 A grid search was conducted to determine the optimal combination of parameters to improve the SVM’s classification accuracy. Based on the grid search, the default values provided in the sklearn library were already the most optimal. The confusion matrices for the optimal SVM parameters using the normalized and indicator data are shown below.
 <!-- figure 9 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig9.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig9.png">
+</p>
 <br>
 <i> Figure 9. Support Vector Table, Normalized, Categorized </i>
 
 Using the normalized data, the SVM had a total accuracy of 83.6%, a specificity of 73.1%, and a sensitivity of 91.4%. The proportion of false negatives was 4.9%.
 <!-- figure 10 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig10.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig10.png">
+</p>
 <br>
 <i> Figure 10. Support Vector Table, Normalized, Non-Categorized </i>
 
@@ -146,13 +160,17 @@ Using the indicator data, the accuracy was 88.5%, specificity was 88.9%, and sen
 ### Logistic Regression
 Logistic Regression is a supervised classification technique that is used to predict the probability that an input belongs to each class. In this case, we have two target classifications, 0 and 1, which will be our categorical dependent variables.
 <!-- figure 11 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig11.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig11.png">
+</p>
 <br>
 <i> Figure 11. Logistic Regression, Normalized, Non-Categorized </i>
 
 When utilizing the normalized raw data, the logistic regression algorithm had an accuracy of 80.3%, specificity of 68.8%, and sensitivity of 93.1%. The proportion of false negatives was 3.3%. 
 <!-- figure 12 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig12.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig12.png">
+</p>
 <br>
 <i> Figure 12. Logistic Regression, Normalized, Categorized </i>
 
@@ -162,13 +180,17 @@ For Logistic Regression, using the indicator data significantly increased the ac
 
 The ROC curve helps us to visualize the plotting of the sensitivity and specificity values on a graph. A model that has high discrimination will have a plot that gravitates toward the top left. On the other hand, a model with low discrimination will be closer to the red linear line. The most optimal way to determine if a model has a good discrimination ability is to calculate the area under the ROC curve. This is displayed in the graphs below.
 <!-- figure 13 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig13.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig13.png">
+</p>
 <br>
 <i> Figure 13. ROC Curve of Logistic Regression, Normalized, Categorized </i>
 
 The ROC curve for the normalized data is displayed above. The area under the curve is 0.82.
 <!-- figure 14 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig14.png">
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/images/fig14.png">
+</p>
 <br>
 <i> Figure 14. ROC Curve of Logistic Regression, Normalized, Non-Categorized </i>
 
