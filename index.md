@@ -79,13 +79,19 @@ Neural Networks is an ML algorithm which models after a human brain, consisting 
 
 Sigmoid marginally performed the best among activation functions for our neural network implementation, as expected. As our goal is to perform binary classification, sigmoid, with its output ranging from 0 to 1, stands the best among other activation functions, such as linear, tanh, and reLU. Linear function cannot be used for backpropagation, and so is reLU for our case, as reLU with values above zero simply reduces down to being a linear function. Tanh, given its range from -1 to 1, did not bring us consistent results after several epoch passed through.
 <!-- figure 6 -->
+<i> Figure 6. Neural Network, Normalized Data, Non-Categorized, 300 Epochs </i>
+
 We did not use categorized dataset for neural networks. Categorizing each feature based on its range of values resulted in squashing the differences of each dominant variable, causing the results to be inconsistent and fluctuating. This is a behaviour often found from perceptrons with activation function output being solid 0 or 1, therefore causing any alterations in input end up to bring extreme differences in the outputs. Similarly, a small change in inputs (e.g. age) has a potential of being classified into two distinct categories, resulting in a greater change in the outputs.
 
 The final resulting accuracy for our neural network was 81 ± 2.3%.
 
 ### Decision Tree
 <!-- figure 7 -->
+<i> Figure 7. Decision Tree, using Categorized data. </i>
+
 <!-- figure 8 -->
+<i> Figure 8. Decision Tree Scores with varying number of maximum features. </i>
+
 Since each node or leaf in the decision tree classifier represents a label / indicator value, it would not make sense to use the original numerical values (non-categorical values) from our raw data. Thus, we only used our processed data where all the numerical values were converted into categorical (indicator) values.
 
 The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification for instances. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 82%. 
@@ -99,24 +105,35 @@ Support vector machines are a supervised learning technique where labeled traini
 
 A grid search was conducted to determine the optimal combination of parameters to improve the SVM’s classification accuracy. Based on the grid search, the default values provided in the sklearn library were already the most optimal. The confusion matrices for the optimal SVM parameters using the normalized and indicator data are shown below.
 <!-- figure 9 -->
+<i> Figure 9. Support Vector Table, Normalized, Categorized </i>
+
 Using the normalized data, the SVM had a total accuracy of 83.6%, a specificity of 73.1%, and a sensitivity of 91.4%. The proportion of false negatives was 4.9%.
 <!-- figure 10 -->
+<i> Figure 10. Support Vector Table, Normalized, Non-Categorized </i>
 
 Using the indicator data, the accuracy was 88.5%, specificity was 88.9%, and sensitivity was 88.2%. The proportion of false negatives was 6.6%. With the SVM, it is evident that specificity and overall accuracy increased when training with the indicator data, but sensitivity and the proportion of false negatives suffered very slightly. Because the number of false negatives was so low in general, the slight increase in false negatives is not extremely significant, although it should still be considered when comparing the use of raw and indicator data.
 
 ### Logistic Regression
 Logistic Regression is a supervised classification technique that is used to predict the probability that an input belongs to each class. In this case, we have two target classifications, 0 and 1, which will be our categorical dependent variables.
 <!-- figure 11 -->
+<i> Figure 11. Logistic Regression, Normalized, Non-Categorized </i>
+
 When utilizing the normalized raw data, the logistic regression algorithm had an accuracy of 80.3%, specificity of 68.8%, and sensitivity of 93.1%. The proportion of false negatives was 3.3%. 
 <!-- figure 12 -->
+<i> Figure 12. Logistic Regression, Normalized, Categorized </i>
+
 With the indicator data, the accuracy is 86.9%, the specificity is 84.6%, and the sensitivity was 88.5%. The proportion of false negatives was 6.5%.
 
 For Logistic Regression, using the indicator data significantly increased the accuracy, specificity, and proportion of false negatives, while the sensitivity decreased. The increase in the proportion of false negatives was not immense, but it should still be taken into consideration when comparing the normalized data and the indicator data.
 
 The ROC curve helps us to visualize the plotting of the sensitivity and specificity values on a graph. A model that has high discrimination will have a plot that gravitates toward the top left. On the other hand, a model with low discrimination will be closer to the red linear line. The most optimal way to determine if a model has a good discrimination ability is to calculate the area under the ROC curve. This is displayed in the graphs below.
 <!-- figure 13 -->
+<i> Figure 13. ROC Curve of Logistic Regression, Normalized, Categorized </i>
+
 The ROC curve for the normalized data is displayed above. The area under the curve is 0.82.
 <!-- figure 14 -->
+<i> Figure 14. ROC Curve of Logistic Regression, Normalized, Non-Categorized </i>
+
 The ROC curve for the indicator data is displayed above. The area under the curve is 0.87 which is slightly higher than the area for the normalized data model.
 
 ## Results
