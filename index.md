@@ -39,10 +39,12 @@ Specificity is defined as True NegativeTrue Negative + False Positive
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
 ## Data Exploration
-<!-- figure 1 -->
+<!-- figure 1 
 <div style="text-align: center">
   <img width="500px" height="350px" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/images/fig1.png">
 </div>
+-->
+<img width="500px" height="350px" style="float: center" src="/images/fig1.png">
 <i> Figure 1. Correlation heatmap of dataset variables. </i>
 <br>
 
