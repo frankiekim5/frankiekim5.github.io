@@ -78,7 +78,7 @@ We normalized our raw data in order to convert our data to a common scale and th
 
 ### Encoding original values to categorical values
 <!-- figure 5 -->
-<img width="400px" height="250px" style="float: center" src="/images/fig5.png">
+<img width="750px" height="250px" style="float: center" src="/images/fig5.png">
 <i>	Figure 5. Normalizing age values by categorizing them into five different groups. </i>
 
 Because the original values in 'age', 'trestbps', 'chol', 'thalach', 'oldpeak' features are not categorical values, we encoded their numerical values into indicator/ categorical values. By doing so, we wanted to see if data manipulation would improve ML training and help us to gain more insight.
