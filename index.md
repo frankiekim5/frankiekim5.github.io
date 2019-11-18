@@ -39,6 +39,7 @@ Specificity is defined as True NegativeTrue Negative + False Positive
 In addition to these two single-value calculations, we will also provide the confusion matrices to visualize the accuracies of each model’s predictive capabilities. In the field of medical diagnosis, we are looking to minimize the number of false negatives, because it is more desirable to produce a false positive diagnosis that leads to further testing, rather than a false negative that could hide potentially dangerous conditions.
 
 ## Data Exploration
+<i> Figure 1. Correlation heatmap of dataset variables. </i>
 <!-- figure 1 -->
 Based on the correlation heatmap above, the bottom-most row and right-most column depict the correlation of each factor with the target. From the correlation heat map, it is evident that cp, thalach are the most positively correlated with the target, and exang, oldpeak, and ca are the most inversely correlated with the target. To summarize, from the correlation heat map, the five features (cp, thalach, exang, oldpeak, ca) depict the most correlation with the target result.
 
@@ -74,8 +75,40 @@ We did not use categorized dataset for neural networks. Categorizing each featur
 The final resulting accuracy for our neural network was 81 ± 2.3%.
 
 ### Decision Tree
+<!-- figure 7 -->
+<!-- figure 8 -->
+Since each node or leaf in the decision tree classifier represents a label / indicator value, it would not make sense to use the original numerical values (non-categorical values) from our raw data. Thus, we only used our processed data where all the numerical values were converted into categorical (indicator) values.
+
+The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification for instances. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 82%. 
+
+Although the accuracy of the decision tree algorithm (82%) seems relatively high, from the graph above, we can see that the accuracy fluctuates significantly as the maximum number of features used changes; therefore, it fails to draw a clear pattern or relationship between the maximum number of features and scores. Therefore, it is hard to conclude whether a decision tree classifier is a suitable model for our dataset. 
+
+(Overfitting is quite common with decision trees because of the nature of their training, which is why it shows a relatively lower accuracy than other models.)
+
 ### Support Vector Machine
+Support vector machines are a supervised learning technique where labeled training data is used to generate an optimal hyperplane that separates the two classes and can categorize new testing data. In the case of this study, the SVMs are intended to separate between the two classes of target = 1 and target = 0. Tuning parameters for support vector machines include the regularization parameter, kernel, and gamma. The regularization parameter essentially determines how much you want to avoid misclassifying training examples. The kernel allows the SVM to calculate the separating  plane in higher dimensions. Gamma defines how far the influence of a single point reaches, with low values taking into account further points and high values only taking into account the closest points to the hyperplane.
+
+A grid search was conducted to determine the optimal combination of parameters to improve the SVM’s classification accuracy. Based on the grid search, the default values provided in the sklearn library were already the most optimal. The confusion matrices for the optimal SVM parameters using the normalized and indicator data are shown below.
+<!-- figure 9 -->
+Using the normalized data, the SVM had a total accuracy of 83.6%, a specificity of 73.1%, and a sensitivity of 91.4%. The proportion of false negatives was 4.9%.
+<!-- figure 10 -->
+
+Using the indicator data, the accuracy was 88.5%, specificity was 88.9%, and sensitivity was 88.2%. The proportion of false negatives was 6.6%. With the SVM, it is evident that specificity and overall accuracy increased when training with the indicator data, but sensitivity and the proportion of false negatives suffered very slightly. Because the number of false negatives was so low in general, the slight increase in false negatives is not extremely significant, although it should still be considered when comparing the use of raw and indicator data.
+
 ### Logistic Regression
+Logistic Regression is a supervised classification technique that is used to predict the probability that an input belongs to each class. In this case, we have two target classifications, 0 and 1, which will be our categorical dependent variables.
+<!-- figure 11 -->
+When utilizing the normalized raw data, the logistic regression algorithm had an accuracy of 80.3%, specificity of 68.8%, and sensitivity of 93.1%. The proportion of false negatives was 3.3%. 
+<!-- figure 12 -->
+With the indicator data, the accuracy is 86.9%, the specificity is 84.6%, and the sensitivity was 88.5%. The proportion of false negatives was 6.5%.
+
+For Logistic Regression, using the indicator data significantly increased the accuracy, specificity, and proportion of false negatives, while the sensitivity decreased. The increase in the proportion of false negatives was not immense, but it should still be taken into consideration when comparing the normalized data and the indicator data.
+
+The ROC curve helps us to visualize the plotting of the sensitivity and specificity values on a graph. A model that has high discrimination will have a plot that gravitates toward the top left. On the other hand, a model with low discrimination will be closer to the red linear line. The most optimal way to determine if a model has a good discrimination ability is to calculate the area under the ROC curve. This is displayed in the graphs below.
+<!-- figure 13 -->
+The ROC curve for the normalized data is displayed above. The area under the curve is 0.82.
+<!-- figure 14 -->
+The ROC curve for the indicator data is displayed above. The area under the curve is 0.87 which is slightly higher than the area for the normalized data model.
 
 ## Results
 
