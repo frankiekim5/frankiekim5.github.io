@@ -44,18 +44,14 @@ In addition to these two single-value calculations, we will also provide the con
   <img width="500px" height="350px" style="display: block; margin-left: auto; margin-right: auto; width: 50%" src="/images/fig1.png">
 </div>
 -->
-<p align="center">
-  <img width="500px" height="350px" src="/images/fig1.png">
-</p>
+<img width="500px" height="350px" style="float: center" src="/images/fig1.png">
 <br>
 <i> Figure 1. Correlation heatmap of dataset variables. </i>
 
 Based on the correlation heatmap above, the bottom-most row and right-most column depict the correlation of each factor with the target. From the correlation heat map, it is evident that cp, thalach are the most positively correlated with the target, and exang, oldpeak, and ca are the most inversely correlated with the target. To summarize, from the correlation heat map, the five features (cp, thalach, exang, oldpeak, ca) depict the most correlation with the target result.
 
 <!-- figure 2 -->
-<p align="center">
-  <img width="500px" height="350px" style="float: center" src="/images/fig2.png">
-</p>
+<img width="500px" height="350px" style="float: center" src="/images/fig2.png">
 <br>
 <i> Figure 2. Graphical representation of relationships among five selected variables. </i>
 
@@ -65,18 +61,14 @@ The pair plot is used to understand the best set of features to explain the rela
 Using a chi-squared statistical test, we identified the same 5 features as having the highest correlation with the target variable.
 
 <!-- figure 3 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig3.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig3.png">
 <br>
 <i> Figure 3. Univariate Selection of five features of the dataset. </i>
 
 The Extra Tree Classifier class in the scikit-learn API was used to estimate the importance of features. The five features displayed were the same as above, but the scores were different from the univariate selection.
 
 <!-- figure 4 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig4.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig4.png">
 <br>
 <i> Figure 4. Feature importance. </i>
 
@@ -89,9 +81,7 @@ We normalized our raw data in order to convert our data to a common scale and th
 
 ### Encoding original values to categorical values
 <!-- figure 5 -->
-<p align="center">
-  <img width="650px" height="250px" style="float: center" src="/images/fig5.png">
-</p>
+<img width="750px" height="250px" style="float: center" src="/images/fig5.png">
 <br>
 <i>	Figure 5. Normalizing age values by categorizing them into five different groups. </i>
 
@@ -102,11 +92,8 @@ Because the original values in 'age', 'trestbps', 'chol', 'thalach', 'oldpeak' f
 Neural Networks is an ML algorithm which models after a human brain, consisting of several layers of nodes that act like neurons, each containing an activation function to weigh the significance of its inputs to give out a single result. There are several variations to Neural Network, of which we’ve chosen Sequential Neural Network for our research. 
 
 Sigmoid marginally performed the best among activation functions for our neural network implementation, as expected. As our goal is to perform binary classification, sigmoid, with its output ranging from 0 to 1, stands the best among other activation functions, such as linear, tanh, and reLU. Linear function cannot be used for backpropagation, and so is reLU for our case, as reLU with values above zero simply reduces down to being a linear function. Tanh, given its range from -1 to 1, did not bring us consistent results after several epoch passed through.
-<br>
 <!-- figure 6 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig6.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig6.png">
 <br>
 <i> Figure 6. Neural Network, Normalized Data, Non-Categorized, 300 Epochs </i>
 
@@ -116,16 +103,12 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
 
 ### Decision Tree
 <!-- figure 7 -->
-<p align="center">
-  <img width="750px" height="250px" style="float: center" src="/images/fig7.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig7.png">
 <br>
 <i> Figure 7. Decision Tree, using Categorized data. </i>
 
 <!-- figure 8 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig8.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig8.png">
 <br>
 <i> Figure 8. Decision Tree Scores with varying number of maximum features. </i>
 
@@ -141,20 +124,14 @@ Although the accuracy of the decision tree algorithm (82%) seems relatively high
 Support vector machines are a supervised learning technique where labeled training data is used to generate an optimal hyperplane that separates the two classes and can categorize new testing data. In the case of this study, the SVMs are intended to separate between the two classes of target = 1 and target = 0. Tuning parameters for support vector machines include the regularization parameter, kernel, and gamma. The regularization parameter essentially determines how much you want to avoid misclassifying training examples. The kernel allows the SVM to calculate the separating  plane in higher dimensions. Gamma defines how far the influence of a single point reaches, with low values taking into account further points and high values only taking into account the closest points to the hyperplane.
 
 A grid search was conducted to determine the optimal combination of parameters to improve the SVM’s classification accuracy. Based on the grid search, the default values provided in the sklearn library were already the most optimal. The confusion matrices for the optimal SVM parameters using the normalized and indicator data are shown below.
-<br>
 <!-- figure 9 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig9.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig9.png">
 <br>
 <i> Figure 9. Support Vector Table, Normalized, Categorized </i>
 
 Using the normalized data, the SVM had a total accuracy of 83.6%, a specificity of 73.1%, and a sensitivity of 91.4%. The proportion of false negatives was 4.9%.
-<br>
 <!-- figure 10 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig10.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig10.png">
 <br>
 <i> Figure 10. Support Vector Table, Normalized, Non-Categorized </i>
 
@@ -163,19 +140,13 @@ Using the indicator data, the accuracy was 88.5%, specificity was 88.9%, and sen
 ### Logistic Regression
 Logistic Regression is a supervised classification technique that is used to predict the probability that an input belongs to each class. In this case, we have two target classifications, 0 and 1, which will be our categorical dependent variables.
 <!-- figure 11 -->
-<br>
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig11.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig11.png">
 <br>
 <i> Figure 11. Logistic Regression, Normalized, Non-Categorized </i>
 
 When utilizing the normalized raw data, the logistic regression algorithm had an accuracy of 80.3%, specificity of 68.8%, and sensitivity of 93.1%. The proportion of false negatives was 3.3%. 
-<br>
 <!-- figure 12 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig12.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig12.png">
 <br>
 <i> Figure 12. Logistic Regression, Normalized, Categorized </i>
 
@@ -184,26 +155,23 @@ With the indicator data, the accuracy is 86.9%, the specificity is 84.6%, and th
 For Logistic Regression, using the indicator data significantly increased the accuracy, specificity, and proportion of false negatives, while the sensitivity decreased. The increase in the proportion of false negatives was not immense, but it should still be taken into consideration when comparing the normalized data and the indicator data.
 
 The ROC curve helps us to visualize the plotting of the sensitivity and specificity values on a graph. A model that has high discrimination will have a plot that gravitates toward the top left. On the other hand, a model with low discrimination will be closer to the red linear line. The most optimal way to determine if a model has a good discrimination ability is to calculate the area under the ROC curve. This is displayed in the graphs below.
-<br>
 <!-- figure 13 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig13.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig13.png">
 <br>
 <i> Figure 13. ROC Curve of Logistic Regression, Normalized, Categorized </i>
 
 The ROC curve for the normalized data is displayed above. The area under the curve is 0.82.
-<br>
 <!-- figure 14 -->
-<p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig14.png">
-</p>
+<img width="400px" height="250px" style="float: center" src="/images/fig14.png">
 <br>
 <i> Figure 14. ROC Curve of Logistic Regression, Normalized, Non-Categorized </i>
 
 The ROC curve for the indicator data is displayed above. The area under the curve is 0.87 which is slightly higher than the area for the normalized data model.
 
 ## Results
+
+In conclusion, the model with the highest performance for heart disease diagnosis is a Support Vector Machine using indicator data with parameters of c = 1, gamma = 1, and kernel = rbf. The accuracies, specificities, and sensitivities for each model (only the highest accuracy model between the normalized and indicator data was chosen) are shown below, with the SVM having the highest accuracy.
+
 
 ## Reference
 
