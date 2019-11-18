@@ -90,7 +90,7 @@ We normalized our raw data in order to convert our data to a common scale and th
 ### Encoding original values to categorical values
 <!-- figure 5 -->
 <p align="center">
-  <img width="750px" height="250px" style="float: center" src="/images/fig5.png">
+  <img width="600px" height="250px" style="float: center" src="/images/fig5.png">
 </p>
 <br>
 <i>	Figure 5. Normalizing age values by categorizing them into five different groups. </i>
