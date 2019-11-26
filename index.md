@@ -156,7 +156,7 @@ Using the indicator data, the accuracy was 88.5%, specificity was 88.9%, and sen
 Logistic Regression is a supervised classification technique that is used to predict the probability that an input belongs to each class. In this case, we have two target classifications, 0 and 1, which will be our categorical dependent variables.
 <!-- figure 11 -->
 <p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig11.png">
+  <img width="400px" height="250px" style="float: center" src="/images/fig11.PNG">
   <br>
   <i> Figure 11. Logistic Regression, Normalized, Non-Categorized </i>
 </p>
@@ -164,7 +164,7 @@ Logistic Regression is a supervised classification technique that is used to pre
 When utilizing the normalized raw data, the logistic regression algorithm had an accuracy of 80.3%, specificity of 68.8%, and sensitivity of 93.1%. The proportion of false negatives was 3.3%. 
 <!-- figure 12 -->
 <p align="center">
-  <img width="400px" height="250px" style="float: center" src="/images/fig12.png">
+  <img width="400px" height="250px" style="float: center" src="/images/fig12.PNG">
   <br>
   <i> Figure 12. Logistic Regression, Normalized, Categorized </i>
 </p>
