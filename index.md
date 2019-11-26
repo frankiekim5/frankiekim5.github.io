@@ -125,7 +125,7 @@ Since each node or leaf in the decision tree classifier represents a label / ind
   <i> Figure 8. Decision Tree Confusion Matrix </i>
 </p>
 
-Using the indicator data, the accuracy was 80.5%, specificity was 73.5%, and sensitivity was 88.9%.
+Using the indicator data, the accuracy was 80.3%, specificity was 73.5%, and sensitivity was 88.9%.
 
 The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 80.3%. 
 
