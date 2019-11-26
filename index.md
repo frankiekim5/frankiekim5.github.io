@@ -110,7 +110,7 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
   <i> Figure 6. Decision Tree, using Categorized data. </i>
 </p>
 
-<!-- figure 8 -->
+<!-- figure 7 -->
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig8.png">
   <br>
@@ -119,6 +119,11 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
 
 Since each node or leaf in the decision tree classifier represents a label / indicator value, it would not make sense to use the original numerical values (non-categorical values) from our raw data. Thus, we only used our processed data where all the numerical values were converted into categorical (indicator) values.
 
+The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 80.3%. 
+
+Although the accuracy of the decision tree algorithm (80.3%) seems relatively high, from the graph above, we can see that the accuracy fluctuates significantly as the maximum number of features used changes; therefore, it fails to draw a clear pattern or relationship between the maximum number of features and scores. Therefore, it is hard to conclude whether a decision tree classifier is a suitable model for our dataset.
+
+<!-- figure 8 -->
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/graphs/indicatordata_decisiontree.png">
   <br>
@@ -126,10 +131,6 @@ Since each node or leaf in the decision tree classifier represents a label / ind
 </p>
 
 Using the indicator data, the accuracy was 80.3%, specificity was 73.5%, and sensitivity was 88.9%.
-
-The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 80.3%. 
-
-Although the accuracy of the decision tree algorithm (80.3%) seems relatively high, from the graph above, we can see that the accuracy fluctuates significantly as the maximum number of features used changes; therefore, it fails to draw a clear pattern or relationship between the maximum number of features and scores. Therefore, it is hard to conclude whether a decision tree classifier is a suitable model for our dataset.
 
 ### Support Vector Machine
 Support vector machines are a supervised learning technique where labeled training data is used to generate an optimal hyperplane that separates the two classes and can categorize new testing data. In the case of this study, the SVMs are intended to separate between the two classes of target = 1 and target = 0. Tuning parameters for support vector machines include the regularization parameter, kernel, and gamma. The regularization parameter essentially determines how much you want to avoid misclassifying training examples. The kernel allows the SVM to calculate the separating  plane in higher dimensions. Gamma defines how far the influence of a single point reaches, with low values taking into account further points and high values only taking into account the closest points to the hyperplane.
