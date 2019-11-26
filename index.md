@@ -117,13 +117,15 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
   <i> Figure 7. Decision Tree Scores with varying number of maximum features. </i>
 </p>
 
+Since each node or leaf in the decision tree classifier represents a label / indicator value, it would not make sense to use the original numerical values (non-categorical values) from our raw data. Thus, we only used our processed data where all the numerical values were converted into categorical (indicator) values.
+
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/graphs/indicatordata_decisiontree.png">
   <br>
   <i> Figure 8. Decision Tree Confusion Matrix </i>
 </p>
 
-Since each node or leaf in the decision tree classifier represents a label / indicator value, it would not make sense to use the original numerical values (non-categorical values) from our raw data. Thus, we only used our processed data where all the numerical values were converted into categorical (indicator) values.
+Using the indicator data, the accuracy was 80.5%, specificity was 73.5%, and sensitivity was 88.9%.
 
 The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 82%. 
 
