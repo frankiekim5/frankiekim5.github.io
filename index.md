@@ -117,6 +117,12 @@ The final resulting accuracy for our neural network was 81 ± 2.3%.
   <i> Figure 7. Decision Tree Scores with varying number of maximum features. </i>
 </p>
 
+<p align="center">
+  <img width="400px" height="250px" style="float: center" src="/graphs/indicatordata_decisiontree.png">
+  <br>
+  <i> Figure 8. Decision Tree Confusion Matrix </i>
+</p>
+
 Since each node or leaf in the decision tree classifier represents a label / indicator value, it would not make sense to use the original numerical values (non-categorical values) from our raw data. Thus, we only used our processed data where all the numerical values were converted into categorical (indicator) values.
 
 The performance of a decision tree can be increased by pruning. Pruning involves removing the “branches” that are weak in providing classification. Thus, we tried to prune and optimize by changing our decision tree model by changing the number of features used to find the best split in our tree. Our result showed us that having a maximum of 9 features yielded the best accuracy of 82%. 
@@ -131,7 +137,7 @@ A grid search was conducted to determine the optimal combination of parameters t
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig9.png">
   <br>
-  <i> Figure 8. Support Vector Table, Normalized, Categorized </i>
+  <i> Figure 9. Support Vector Table, Normalized, Categorized </i>
 </p>
 
 Using the normalized data, the SVM had a total accuracy of 83.6%, a specificity of 73.1%, and a sensitivity of 91.4%. The proportion of false negatives was 4.9%.
@@ -139,7 +145,7 @@ Using the normalized data, the SVM had a total accuracy of 83.6%, a specificity 
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig10.png">
   <br>
-  <i> Figure 9. Support Vector Table, Normalized, Non-Categorized </i>
+  <i> Figure 10. Support Vector Table, Normalized, Non-Categorized </i>
 </p>
 
 Using the indicator data, the accuracy was 88.5%, specificity was 88.9%, and sensitivity was 88.2%. The proportion of false negatives was 6.6%. With the SVM, it is evident that specificity and overall accuracy increased when training with the indicator data, but sensitivity and the proportion of false negatives suffered very slightly. Because the number of false negatives was so low in general, the slight increase in false negatives is not extremely significant, although it should still be considered when comparing the use of raw and indicator data.
@@ -150,7 +156,7 @@ Logistic Regression is a supervised classification technique that is used to pre
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig11.png">
   <br>
-  <i> Figure 10. Logistic Regression, Normalized, Non-Categorized </i>
+  <i> Figure 11. Logistic Regression, Normalized, Non-Categorized </i>
 </p>
 
 When utilizing the normalized raw data, the logistic regression algorithm had an accuracy of 80.3%, specificity of 68.8%, and sensitivity of 93.1%. The proportion of false negatives was 3.3%. 
@@ -158,7 +164,7 @@ When utilizing the normalized raw data, the logistic regression algorithm had an
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig12.png">
   <br>
-  <i> Figure 11. Logistic Regression, Normalized, Categorized </i>
+  <i> Figure 12. Logistic Regression, Normalized, Categorized </i>
 </p>
 
 With the indicator data, the accuracy is 86.9%, the specificity is 84.6%, and the sensitivity was 88.5%. The proportion of false negatives was 6.5%.
@@ -170,7 +176,7 @@ The ROC curve helps us to visualize the plotting of the sensitivity and specific
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig13.png">
   <br>
-  <i> Figure 12. ROC Curve of Logistic Regression, Normalized, Categorized </i>
+  <i> Figure 13. ROC Curve of Logistic Regression, Normalized, Categorized </i>
 </p>
 
 The ROC curve for the normalized data is displayed above. The area under the curve is 0.82.
@@ -178,7 +184,7 @@ The ROC curve for the normalized data is displayed above. The area under the cur
 <p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig14.png">
   <br>
-  <i> Figure 13. ROC Curve of Logistic Regression, Normalized, Non-Categorized </i>
+  <i> Figure 14. ROC Curve of Logistic Regression, Normalized, Non-Categorized </i>
 </p>
 
 The ROC curve for the indicator data is displayed above. The area under the curve is 0.87 which is slightly higher than the area for the normalized data model.
