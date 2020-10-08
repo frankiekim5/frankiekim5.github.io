@@ -86,20 +86,20 @@ We normalized our raw data in order to convert our data to a common scale and th
 Because the original values in 'age', 'trestbps', 'chol', 'thalach', 'oldpeak' features are not categorical values, we encoded their numerical values into indicator/ categorical values. By doing so, we wanted to see if data manipulation would improve ML training and help us to gain more insight.
 
 ## Supervised Learning Techniques
-### Neural Networks
+<!--### Neural Networks
 Neural Networks is an ML algorithm which models after a human brain, consisting of several layers of nodes that act like neurons, each containing an activation function to weigh the significance of its inputs to give out a single result. There are several variations to Neural Network, of which we’ve chosen Sequential Neural Network for our research. 
 
-Sigmoid marginally performed the best among activation functions for our neural network implementation, as expected. As our goal is to perform binary classification, sigmoid, with its output ranging from 0 to 1, stands the best among other activation functions, such as linear, tanh, and reLU. Linear function cannot be used for backpropagation, and so is reLU for our case, as reLU with values above zero simply reduces down to being a linear function. Tanh, given its range from -1 to 1, did not bring us consistent results after several epoch passed through.
-<!-- figure 6 -->
-<p align="center">
+<!--Sigmoid marginally performed the best among activation functions for our neural network implementation, as expected. As our goal is to perform binary classification, sigmoid, with its output ranging from 0 to 1, stands the best among other activation functions, such as linear, tanh, and reLU. Linear function cannot be used for backpropagation, and so is reLU for our case, as reLU with values above zero simply reduces down to being a linear function. Tanh, given its range from -1 to 1, did not bring us consistent results after several epoch passed through.
+
+<!--<p align="center">
   <img width="400px" height="250px" style="float: center" src="/images/fig6.png">
   <br>
   <i> Figure 5. Neural Network, Normalized Data, Non-Categorized, 300 Epochs </i>
 </p>
 
-We did not use categorized dataset for neural networks. Categorizing each feature based on its range of values resulted in squashing the differences of each dominant variable, causing the results to be inconsistent and fluctuating. This is a behaviour often found from perceptrons with activation function output being solid 0 or 1, therefore causing any alterations in input end up to bring extreme differences in the outputs. Similarly, a small change in inputs (e.g. age) has a potential of being classified into two distinct categories, resulting in a greater change in the outputs.
+<!--We did not use categorized dataset for neural networks. Categorizing each feature based on its range of values resulted in squashing the differences of each dominant variable, causing the results to be inconsistent and fluctuating. This is a behaviour often found from perceptrons with activation function output being solid 0 or 1, therefore causing any alterations in input end up to bring extreme differences in the outputs. Similarly, a small change in inputs (e.g. age) has a potential of being classified into two distinct categories, resulting in a greater change in the outputs.
 
-The final resulting accuracy for our neural network was 81 ± 2.3%.
+<!--The final resulting accuracy for our neural network was 81 ± 2.3%.-->
 
 ### Decision Tree
 <!-- figure 7 -->
@@ -196,9 +196,9 @@ The ROC curve for the indicator data is displayed above. The area under the curv
 
 In conclusion, the model with the highest performance for heart disease diagnosis is a Support Vector Machine using indicator data with parameters of c = 1, gamma = 1, and kernel = rbf. The accuracies, specificities, and sensitivities for each model (only the highest accuracy model between the normalized and indicator data was chosen) are shown below, with the SVM having the highest accuracy.
 
-<p align="center">
+<!--<p align="center">
   <img width="750px" height="350px" style="float: center" src="/images/resultstable.png">
-</p>
+</p>-->
 
 ## Reference
 
