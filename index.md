@@ -3,11 +3,11 @@
 Cardiovascular disease is the leading cause of death globally, and it is expected to cause more than 23.6 million fatalities a year by 2030 [1]. One's survival from cardiovascular disease primarily depends on early detection and accurate diagnosis of the disease [4].
 
 We can utilize Machine Learning algorithms to predict how likely one is to be diagnosed with cardiovascular disease, which can be used to improve the prevention rate and to provide critical insight for physicians to provide the correct treatment for the patient. In this project, we compare and contrast several ML algorithms for prediction of cardiovascular disease, and analyze them to identify the factors that determine which algorithm is the best fit for our given dataset.
-
+f
 ## Methods
 Heart Disease UCI has made their data available with information from 303 individuals. The dataset provides basic features such as age and sex as well as features that are crucial to diagnosing cardiovascular disease such as blood pressure, cholesterol levels, and blood sugar levels.
 
-The data contains the following columns:
+The data contains the following columns: 
 * Age - age in years
 * Sex - (1 = male; 0 = female)
 * Cp - chest pain type
@@ -24,7 +24,7 @@ The data contains the following columns:
 * Target - have disease or not (1=yes, 0=no)
 
 The goal is to predict the binary class ‘target’, which indicates whether or not a patient has cardiovascular disease. A value of 0 indicates a patient with cardiovascular disease while a value of 1 indicates a patient without cardiovascular disease.
-We will be utilizing three different supervised learning methods to compare the performances and accuracies. Those three methods are Neural Network, Support Vector Machine, and Decision Tree.
+We will be utilizing three different supervised learning methods to compare the performances and accuracies. Those three methods are Support Vector Machine, Decision Tree, Logistic Regression.
 
 ## Expected Results
 Based off of known factors that are significant to detecting cardiovascular disease, we predict that our algorithms will detect similar correlations with the given factors. Current risk factors that are commonly considered in diagnosing risk of heart disease are split into two categories: those that are considered controllable and uncontrollable. Uncontrollable risk factors for heart disease include: male sex, older age, and family history. Controllable risk factors include: high cholesterol, high blood pressure, diabetes, etc. If the tested models have predictive capabilities, it should be possible to see that these factors will correlate positively with heart disease diagnoses. 
