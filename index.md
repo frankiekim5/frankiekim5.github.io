@@ -194,7 +194,7 @@ The ROC curve for the indicator data is displayed above. The area under the curv
 
 ## Results
 
-In conclusion, the model with the highest performance for heart disease diagnosis is a Support Vector Machine using indicator data with parameters of c = 1, gamma = 1, and kernel = rbf. The accuracies, specificities, and sensitivities for each model (only the highest accuracy model between the normalized and indicator data was chosen) are shown below, with the SVM having the highest accuracy.
+In conclusion, the model with the highest performance for heart disease diagnosis is a Support Vector Machine using indicator data with parameters of c = 1, gamma = 1, and kernel = rbf.
 
 <!--<p align="center">
   <img width="750px" height="350px" style="float: center" src="/images/resultstable.png">
